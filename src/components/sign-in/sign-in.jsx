@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './sign-in.styles.scss';
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 const initialState = { email: '', password: '' };
 
@@ -38,12 +39,17 @@ const SignIn = (props) => {
           handleChange={handleChange}
           label="Password"
         />
-        <CustomButton type="submit">Sign in</CustomButton>
+        <div className="buttons">
+          <CustomButton type="submit">Sign in</CustomButton>
+          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            Sign in with google
+          </CustomButton>
+        </div>
       </form>
     </div>
   );
 };
 
-SignIn.propTypes = {};
+// SignIn.propTypes = {};
 
 export default SignIn;

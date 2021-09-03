@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './sign-in-and-sign-up.styles.scss';
 import SignIn from '../../components/sign-in/sign-in';
 
@@ -11,6 +11,6 @@ const SignInAndSignUp = (props) => {
   );
 };
 
-SignInAndSignUp.propTypes = {};
+// SignInAndSignUp.propTypes = {};
 
 export default SignInAndSignUp;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import CollectionPreview from '../../components/collection-preview/collection-preview';
 import SHOP_DATA from './shop.data';
 const Shop = (props) => {
@@ -13,6 +13,6 @@ const Shop = (props) => {
   );
 };
 
-Shop.propTypes = {};
+// Shop.propTypes = {};
 
 export default Shop;
